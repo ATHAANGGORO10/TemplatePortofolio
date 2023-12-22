@@ -18,9 +18,10 @@
 </head>
 
 <body>
-     <nav class="navbar navbar-expand-lg shadow fixed-top bg-white" aria-label="Offcanvas navbar large">
+     <!-- Navigation Strat -->
+     <nav class="navbar navbar-expand-lg shadow fixed-top bg-dark" aria-label="Offcanvas">
           <div class="container">
-               <span class="navbar-brand fs-3">AizenChizuru</span>
+               <span class="navbar-brand fs-4">AizenChizuru</span>
                <div class="button">
                     <a class="navbar-toggler me-1 me-lg-0" type="button" id="darkModeToggle">
                          <span class="material-symbols-outlined">
@@ -34,36 +35,34 @@
                          </span>
                     </a>
                </div>
-               <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasNavbar2"
-                    aria-labelledby="offcanvasNavbar2Label">
-                    <div class="offcanvas-header p-lg-0 p-2 bg-white shadow">
-                         <span class="offcanvas-title fs-3 ms-2" id="offcanvasNavbar2Label">AizenChizuru</span>
-                         <a class="navbar-toggler me-2" type="button" data-bs-dismiss="offcanvas">
-                              <span class="material-symbols-outlined">
-                                   close
-                              </span>
-                         </a>
-                    </div>
-                    <div class="offcanvas-body" style="padding-top: -2rem;">
-                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+               <div class="offcanvas offcanvas-start bg-dark w-50" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-body">
+                         <ul class="navbar-nav ms-auto">
                               <li class="nav-item">
-                                   <a class="nav-link" href="#about">About</a>
+                                   <a class="nav-link mb-2 mb-lg-0" href="#about">About</a>
                               </li>
                               <li class="nav-item">
-                                   <a class="nav-link" href="#blog">Bloger</a>
+                                   <a class="nav-link mb-2 mb-lg-0" href="#">Bloger</a>
                               </li>
                               <li class="nav-item">
-                                   <a class="nav-link" href="#">Works</a>
+                                   <a class="nav-link mb-2 mb-lg-0" href="#">Works</a>
                               </li>
                               <li class="nav-item">
-                                   <a class="nav-link" href="#">Project</a>
+                                   <a class="nav-link mb-2 mb-lg-0" href="#">Project</a>
                               </li>
                          </ul>
                     </div>
                </div>
+               <a class="btn-mode ms-lg-2" type="button" id="lightModeToggler">
+                    <span class="material-symbols-outlined">
+                         brightness_4
+                    </span>
+               </a>
           </div>
      </nav>
+     <!-- Navigation End -->
      <!-- Script Js -->
+     <script src="/js/index.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
           integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
           crossorigin="anonymous"></script>

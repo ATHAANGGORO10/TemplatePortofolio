@@ -1,86 +1,130 @@
-body {
-     height: 1000vh;
-}
-
 .dark-mode {
      color: black;
-     background-color: beige;
+     background-color: rgba(0, 0, 0, 0.733);
 }
-
-/* Selector Body End */
 
 /* Navbar Start */
 .navbar .container .navbar-brand {
-     color: black;
-     font-weight: bolder;
-     font-family: Silkscreen;
-}
-
-.navbar .container .button .navbar-toggler,
-.navbar .container .offcanvas .offcanvas-header .navbar-toggler {
      color: white;
-     padding: 7px 7px;
-     transition: .4s;
-     border: 3px solid orange;
-     background-color: orange;
-}
-
-.navbar .container .offcanvas .offcanvas-header .navbar-toggler:hover {
-     color: orange;
-     padding: 7px 7px;
-     border: 3px solid orange;
-     background-color: white;
-}
-
-.navbar .container .offcanvas .offcanvas-header .offcanvas-title {
-     color: orange;
      font-weight: bolder;
      font-family: Silkscreen;
+}
+
+.navbar .container .button .navbar-toggler {
+     color: white;
+     transition: 0.4s;
+     padding: 5px 5px;
+     background-color: blueviolet;
 }
 
 .navbar .container .button .navbar-toggler:hover {
-     color: orange;
-     padding: 7px 7px;
-     border: 3px solid orange;
-     background-color: white;
+     color: white;
+     padding: 5px 5px;
+     background-color: #6501c3;
+}
+
+.navbar .container .btn-mode .material-symbols-outlined {
+     padding: 5px 0;
+}
+
+.navbar .container .btn-mode {
+     color: white;
+     transition: 0.5s;
+     padding: 2px 7px;
+     border-radius: 5px;
+     outline-style: none;
+     background-color: blueviolet;
+}
+
+.navbar .container .btn-mode:hover {
+     color: white;
+     background-color: #6501c3;
 }
 
 .navbar .container .offcanvas-body .navbar-nav .nav-item .nav-link {
-     margin: 0 5px;
-     font-weight: 500;
+     margin: 0 10px;
+     color: white;
+     font-weight: bolder;
 }
 
 .navbar .container .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
-     margin: 0 5px;
-     transition: .5s;
-     color: orange;
-     font-weight: 500;
+     margin: 0 10px;
+     transition: 0.5s;
+     color: blueviolet;
+     font-weight: bolder;
 }
 
+/* Media Query Headphone */
 @media (max-width: 575.98px) {
-     .navbar .container .collapse .navbar-nav .nav-item .nav-link:hover {
+     .navbar .container .offcanvas-body .navbar-nav .nav-item .nav-link {
+          color: white;
+          margin: 0 5px;
+          font-weight: 500;
+          padding-top: 10px;
+     }
+
+     .navbar .container .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
           color: orange;
           font-weight: bold;
           padding-left: 15px;
-          border-left: 3px solid black;
+          border-left: 3px solid white;
      }
 }
 
+/* Media Query Headphone */
+@media (max-width: 890.98px) {
+     .navbar .container .offcanvas .navbar-nav .nav-item .nav-link:hover {
+          color: orange;
+          font-weight: bold;
+          padding-left: 20px;
+          border-left: 3px solid white;
+     }
+}
+
+/* Media Query Headphone */
 @media (max-width: 360.76px) {
      .navbar .container .offcanvas .navbar-nav .nav-item .nav-link:hover {
           color: orange;
           font-weight: bold;
           padding-left: 20px;
-          border-left: 3px solid black;
+          border-left: 3px solid white;
      }
 }
 
+/* Media Query Headphone */
 @media (max-width: 769px) {
      .navbar .container .offcanvas .navbar-nav .nav-item .nav-link:hover {
           color: orange;
           font-weight: bold;
-          padding-left: 15px;
-          border-left: 3px solid black;
+          padding-left: 20px;
+          border-left: 3px solid white;
+     }
+}
+
+/* Media Query Tablet And Headphone */
+@media (max-width: 990.98px) {
+     .navbar .container .btn-mode {
+          display: none;
+     }
+}
+
+/* Media Query Laptop And Pc */
+@media (max-width: 1475.98px) {
+     .navbar .container .btn-mode .material-symbols-outlined {
+          padding: 5px 0;
+     }
+
+     .navbar .container .btn-mode {
+          color: white;
+          transition: 0.5s;
+          padding: 2px 7px;
+          border-radius: 5px;
+          background-color: blueviolet;
+     }
+
+     .navbar .container .btn-mode:hover {
+          color: white;
+          background-color: #6501c3;
      }
 }
 
