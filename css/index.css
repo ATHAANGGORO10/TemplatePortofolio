@@ -10,6 +10,20 @@
      font-family: Silkscreen;
 }
 
+.navbar .container .btn-mode {
+     color: white;
+     transition: 0.5s;
+     padding: 2px 7px;
+     border-radius: 5px;
+     outline-style: none;
+     background-color: blueviolet;
+}
+
+.navbar .container .btn-mode:hover {
+     color: white;
+     background-color: #6501c3;
+}
+
 .navbar .container .button .navbar-toggler {
      color: white;
      transition: 0.4s;
@@ -27,20 +41,6 @@
      padding: 5px 0;
 }
 
-.navbar .container .btn-mode {
-     color: white;
-     transition: 0.5s;
-     padding: 2px 7px;
-     border-radius: 5px;
-     outline-style: none;
-     background-color: blueviolet;
-}
-
-.navbar .container .btn-mode:hover {
-     color: white;
-     background-color: #6501c3;
-}
-
 .navbar .container .offcanvas-body .navbar-nav .nav-item .nav-link {
      margin: 0 10px;
      color: white;
@@ -55,61 +55,41 @@
 }
 
 /* Media Query Headphone */
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
      .navbar .container .offcanvas-body .navbar-nav .nav-item .nav-link {
           color: white;
           margin: 0 5px;
           font-weight: 500;
           padding-top: 10px;
      }
-
-     .navbar .container .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
-          color: orange;
-          font-weight: bold;
-          padding-left: 15px;
-          border-left: 3px solid white;
-     }
-}
-
-/* Media Query Headphone */
-@media (max-width: 890.98px) {
-     .navbar .container .offcanvas .navbar-nav .nav-item .nav-link:hover {
-          color: orange;
-          font-weight: bold;
-          padding-left: 20px;
-          border-left: 3px solid white;
-     }
-}
-
-/* Media Query Headphone */
-@media (max-width: 360.76px) {
-     .navbar .container .offcanvas .navbar-nav .nav-item .nav-link:hover {
-          color: orange;
-          font-weight: bold;
-          padding-left: 20px;
-          border-left: 3px solid white;
-     }
-}
-
-/* Media Query Headphone */
-@media (max-width: 769px) {
-     .navbar .container .offcanvas .navbar-nav .nav-item .nav-link:hover {
-          color: orange;
-          font-weight: bold;
-          padding-left: 20px;
-          border-left: 3px solid white;
-     }
 }
 
 /* Media Query Tablet And Headphone */
-@media (max-width: 990.98px) {
+@media 
+(max-width: 375px),
+(max-width: 425px),
+(max-width: 990px) {
+     .navbar .container .offcanvas {
+          width: 40vh;
+          background-color: #212529;
+     }
+
+     .navbar .container .offcanvas .navbar-nav .nav-item .nav-link:hover {
+          color: blueviolet;
+          font-weight: bold;
+          padding-left: 20px;
+          border-left: 3px solid white;
+     }
+}
+
+@media (max-width: 990px) {
      .navbar .container .btn-mode {
           display: none;
      }
 }
 
 /* Media Query Laptop And Pc */
-@media (max-width: 1475.98px) {
+@media (max-width: 1475px) {
      .navbar .container .btn-mode .material-symbols-outlined {
           padding: 5px 0;
      }
