@@ -65,8 +65,7 @@
 }
 
 /* Media Query Tablet And Headphone */
-@media 
-(max-width: 375px),
+@media (max-width: 375px),
 (max-width: 425px),
 (max-width: 990px) {
      .navbar .container .offcanvas {
