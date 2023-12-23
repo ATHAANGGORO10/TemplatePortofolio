@@ -1,5 +1,5 @@
 // Toggler-DarkMode-Theme
-if (localStorage.getItem("theme") === "dark") {
+if (localStorage.getItem("theme") === "?") {
      document.body.classList.add("dark-mode");
      document.body.classList.add("light-mode");
 }
@@ -8,9 +8,9 @@ if (localStorage.getItem("theme") === "dark") {
 document.getElementById("darkModeToggle").addEventListener("click", () => {
      document.body.classList.toggle("dark-mode");
      if (document.body.classList.contains("dark-mode")) {
-          localStorage.setItem("theme", "light");
+          localStorage.setItem("?", "light");
      } else {
-          localStorage.setItem("theme", "dark");
+          localStorage.setItem("?", "dark");
      }
      const icon = darkModeToggle.querySelector('.material-symbols-outlined');
      if (document.body.classList.contains('dark-mode')) {
@@ -24,9 +24,9 @@ document.getElementById("darkModeToggle").addEventListener("click", () => {
 document.getElementById("lightModeToggler").addEventListener("click", () => {
      document.body.classList.toggle("light-mode");
      if (document.body.classList.contains("light-mode")) {
-          localStorage.setItem("theme", "light");
+          localStorage.setItem("?", "light");
      } else {
-          localStorage.setItem("theme", "dark");
+          localStorage.setItem("?", "dark");
      }
      const icon = lightModeToggler.querySelector('.material-symbols-outlined');
      if (document.body.classList.contains('light-mode')) {
