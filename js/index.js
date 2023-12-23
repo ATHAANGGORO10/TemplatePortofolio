@@ -1,6 +1,7 @@
 // Toggler-DarkMode-Theme
 if (localStorage.getItem("theme") === "dark") {
      document.body.classList.add("dark-mode");
+     document.body.classList.add("light-mode");
 }
 
 // DarkMode-Android
@@ -21,14 +22,14 @@ document.getElementById("darkModeToggle").addEventListener("click", function () 
 
 // DarkMode-PC dan Laptop
 document.getElementById("lightModeToggler").addEventListener("click", function () {
-     document.body.classList.toggle("dark-mode");
-     if (document.body.classList.contains("dark-mode")) {
-          localStorage.setItem("theme", "light");
-     } else {
+     document.body.classList.toggle("light-mode");
+     if (document.body.classList.contains("light-mode")) {
           localStorage.setItem("theme", "dark");
+     } else {
+          localStorage.setItem("theme", "light");
      }
      const icon = lightModeToggler.querySelector('.material-symbols-outlined');
-     if (document.body.classList.contains('dark-mode')) {
+     if (document.body.classList.contains('light-mode')) {
           icon.textContent = 'mode_night'; // Gelap
      } else {
           icon.textContent = 'light_mode'; // Siang
