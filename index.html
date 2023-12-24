@@ -25,7 +25,12 @@
           <div class="container">
                <span class="navbar-brand fs-4">AizenChizuru</span>
                <div class="button">
-                    <a class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    <a class="navbar-toggler outline-0" type="button">
+                         <span class="material-symbols-outlined">
+                              person_add
+                         </span>
+                    </a>
+                    <a class="navbar-toggler ms-1" type="button" data-bs-toggle="offcanvas"
                          data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
                          <span class="material-symbols-outlined">
                               menu_open
@@ -50,34 +55,6 @@
                               <li class="nav-item">
                                    <a class="nav-link mb-2 mb-lg-0" href="#">Project</a>
                               </li>
-                              <li class="nav-item dropdown">
-                                   <button class="btn dropdown-toggle" type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="bi bi-brightness-high-fill theme-icon-active"
-                                             data-theme-icon-active="bi-brightness-high-fill">
-                                        </i>
-                                   </button>
-                                   <ul class="dropdown-menu dropdown-menu-end">
-                                        <li>
-                                             <button class="dropdown-item d-flex align-items-center" type="button"
-                                                  data-bs-theme-value="light">
-                                                  <i class="bi bi-cloud-sun-fill me-2"
-                                                       data-theme-icon="bi-cloud-sun-fill">
-                                                  </i>
-                                                  Light
-                                             </button>
-                                        </li>
-                                        <li>
-                                             <button class="dropdown-item d-flex align-items-center" type="button"
-                                                  data-bs-theme-value="dark">
-                                                  <i class="bi bi-moon-stars-fill me-2"
-                                                       data-theme-icon="bi-moon-stars-fill">
-                                                  </i>
-                                                  Dark
-                                             </button>
-                                        </li>
-                                   </ul>
-                              </li>
                          </ul>
                     </div>
                </div>
@@ -85,12 +62,20 @@
      </nav>
      <!-- Navigation End -->
 
+     <!-- Theme Mode Start -->
+     <div class="btn-mode position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+          <button class="btn d-flex align-items-center border-0" type="button" id="darkModeToggle">
+               <i id="darkModeIcon" class="bi bi-cloud-sun-fill text-white"></i>
+          </button>
+     </div>
+     <!-- Theme Mode End -->
+
      <!-- Home Start -->
      <section class="section" id="Home" style="background-color: var(--bs-body-bg);">
           <div class="container">
                <div class="row justify-content-center">
                     <div class="col-xxl-4 col-lg-5">
-                         <img src="/img/content.svg" alt="content-image" class="img-fluid">
+                         <img src="/img/content.svg" alt="content-image" class="img-fluid align-self-center">
                     </div>
                     <div class="col-xxl-8 col-lg-7 align-self-center">
                          <span class="section-brand fs-2">
@@ -108,6 +93,7 @@
           </div>
      </section>
      <!-- Home End -->
+
      <!-- Script Js -->
      <script src="/js/index.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

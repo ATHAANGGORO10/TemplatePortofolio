@@ -1,6 +1,7 @@
 body {
      height: 200vh;
 }
+
 /* Navbar Start */
 .navbar .container .navbar-brand {
      font-weight: bolder;
@@ -11,7 +12,7 @@ body {
      color: white;
      transition: 0.4s;
      padding: 5px 5px;
-     background-color: blueviolet;
+     background-color: #6501c3;
 }
 
 .navbar .container .button .navbar-toggler:hover {
@@ -26,7 +27,6 @@ body {
 
 .navbar .container .offcanvas-body .navbar-nav .nav-item .nav-link {
      margin: 0 10px;
-     /* color: white; */
      font-weight: bolder;
 }
 
@@ -84,3 +84,16 @@ body {
 }
 
 /* Section End */
+
+/* Theme Mode Start */
+.btn-mode {
+     padding: 7px 5px;
+     border-radius: 10%;
+     background-color: #6501c3;
+}
+
+.btn-mode:hover {
+     background-color: blueviolet;
+}
+
+/* Theme Mode End */
