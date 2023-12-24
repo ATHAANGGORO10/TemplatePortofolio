@@ -1,14 +1,4 @@
 /* Navbar Start */
-.dark-mode {
-     color: white;
-     background-color: #212529;
-}
-
-.light-mode {
-     color: white;
-     background-color: #212529;
-}
-
 .navbar .container .navbar-brand {
      color: white;
      font-weight: bolder;
