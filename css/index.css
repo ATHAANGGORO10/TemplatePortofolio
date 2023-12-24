@@ -1,6 +1,8 @@
+body {
+     height: 200vh;
+}
 /* Navbar Start */
 .navbar .container .navbar-brand {
-     color: white;
      font-weight: bolder;
      font-family: Silkscreen;
 }
@@ -38,7 +40,7 @@
 
 .navbar .container .offcanvas-body .navbar-nav .nav-item .nav-link {
      margin: 0 10px;
-     color: white;
+     /* color: white; */
      font-weight: bolder;
 }
 
@@ -103,3 +105,22 @@
 }
 
 /* Navbar End */
+
+/* Section Start */
+.section {
+     padding-top: 5rem;
+}
+
+.section-brand {
+     color: #6501c3;
+     font-weight: bolder;
+     font-family: Silkscreen;
+}
+
+.text-description {
+     font-size: medium;
+     font-style: italic;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Section End */

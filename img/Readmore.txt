@@ -1,0 +1,60 @@
+
+(() => {
+     'use strict';
+
+     const getStoredTheme = () => localStorage.getItem('theme');
+     const setStoredTheme = theme => localStorage.setItem('theme', theme);
+     const getPreferredTheme = () => {
+          const storedTheme = getStoredTheme();
+          if (storedTheme) {
+               return storedTheme;
+          }
+          return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+     };
+
+     const setTheme = theme => {
+          if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+               document.documentElement.setAttribute('data-bs-theme', 'dark');
+          } else {
+               document.documentElement.setAttribute('data-bs-theme', theme);
+          }
+          showActiveTheme(theme);
+     };
+
+     const toggleTheme = () => {
+          const currentTheme = getStoredTheme() || getPreferredTheme();
+          const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+          setStoredTheme(newTheme);
+          setTheme(newTheme);
+     };
+
+     const showActiveTheme = theme => {
+          const themeSwitchers = document.querySelectorAll('.btn-mode');
+          if (themeSwitchers) {
+               themeSwitchers.forEach(themeSwitcher => {
+                    const themeSwitcherText = themeSwitcher.querySelector('.material-symbols-outlined');
+                    themeSwitcherText.textContent = theme === 'dark' ? 'dark_mode' : 'light_mode';
+                    themeSwitcherText.setAttribute('aria-live', 'polite');
+               });
+          }
+     };
+
+     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+          const storedTheme = getStoredTheme();
+          if (storedTheme !== 'light' && storedTheme !== 'dark') {
+               setTheme(getPreferredTheme());
+          }
+     });
+
+     window.addEventListener('DOMContentLoaded', () => {
+          const storedTheme = getStoredTheme() || getPreferredTheme();
+          setTheme(storedTheme);
+
+          const themeSwitchers = document.querySelectorAll('.btn-mode');
+          if (themeSwitchers) {
+               themeSwitchers.forEach(themeSwitcher => {
+                    themeSwitcher.addEventListener('click', toggleTheme);
+               });
+          }
+     });
+})();
