@@ -157,7 +157,10 @@ body.loading-overlay-active {
      animation: spin 2s linear infinite;
 }
 
-/* Animasi putar spinner */
+.loading-overlay {
+     animation: fadeOut 0.5s ease 0.5s forwards;
+}
+
 @keyframes spin {
      0% {
           transform: rotate(0deg);
@@ -177,10 +180,6 @@ body.loading-overlay-active {
           opacity: 0;
           visibility: hidden;
      }
-}
-
-.loading-overlay {
-     animation: fadeOut 0.5s ease 0.5s forwards;
 }
 
 /* Theme Mode/Loading Screen End */
