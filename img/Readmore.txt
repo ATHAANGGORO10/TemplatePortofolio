@@ -58,3 +58,77 @@
           }
      });
 })();
+
+
+
+
+
+
+
+
+<section class="about shadow" id="About">
+          <div class="container">
+               <div class="row justify-content-center">
+                    <div class="col-xxl-4 col-lg-5">
+                         <img src="/img/content.svg" alt="content-image" class="img-fluid align-self-center">
+                    </div>
+                    <div class="col-xxl-8 col-lg-7 align-self-center">
+                         <span class="about-brand fs-2">
+                              > AizenChizuru
+                         </span>
+                         <p class="text-description pt-2 pt-lg-0">
+                              Halo, saya AizenChizuru, seorang pengembang web dengan fokus pada menciptakan situs web
+                              menarik dan fungsional. Saya memiliki pengalaman dalam front-end, full-stack, back-end,
+                              HTML, CSS,
+                              JavaScript, ReactJS, Python, dan PHP. Saya percaya pada komunikasi dan kerja tim yang
+                              solid dalam pembuatan project dan pengembangan website. Terimakasih atas perhatian Anda.
+                         </p>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+
+
+
+     <header class="home-page">
+          <div class="container">
+               <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-5 col-xxl-6 order-last order-md-first">
+                         <img class="img-fluid" src="/img/mac.png" width="550">
+                    </div>
+                    <div class="col-lg-8 col-xl-7 col-xxl-6  shadow">
+                         <div class="my-5 text-center text-xl-start">
+                              <h1 class="display-5 fw-bolder mb-2">
+                                   A Bootstrap 5 template for modern businesses
+                              </h1>
+                              <p class="lead fw-normal mb-4">
+                                   Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                                   world’s most popular front-end open source toolkit!
+                              </p>
+                              <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                   <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Get Started</a>
+                                   <a class="btn btn-primary btn-lg px-4" href="#!">Learn More</a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </header>
+
+
+
+
+
+
+
+          <!-- Home Start -->
+     <section class="home-page" id="Home">
+          <div class="conatiner">
+               <h1>Wellcome To My Website AizenChizuru</h1>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit explicabo at, vel numquam debitis
+                    aliquam architecto harum obcaecati enim perferendis!
+               </p>
+          </div>
+     </section>
+     <!-- Home End -->

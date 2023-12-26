@@ -6,6 +6,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <!-- Link Css -->
      <link rel="stylesheet" href="/css/index.css" />
+     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
      <link rel="stylesheet"
@@ -20,19 +21,18 @@
 
 <body>
      <!-- Navigation Strat -->
-     <nav class="navbar navbar-expand-lg shadow fixed-top" aria-label="Offcanvas"
-          style="background-color: var(--bs-body-bg);">
+     <nav class="navbar navbar-expand-lg shadow fixed-top" aria-label="Offcanvas">
           <div class="container">
                <span class="navbar-brand fs-4">AizenChizuru</span>
                <div class="button">
-                    <a class="navbar-toggler outline-0" type="button">
-                         <span class="material-symbols-outlined">
-                              person_add
+                    <a class="navbar-toggler ms-1" type="button">
+                         <span class="material-symbols-outlined fw-bold">
+                              groups
                          </span>
                     </a>
                     <a class="navbar-toggler ms-1" type="button" data-bs-toggle="offcanvas"
                          data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
-                         <span class="material-symbols-outlined">
+                         <span class="material-symbols-outlined fw-bold">
                               menu_open
                          </span>
                     </a>
@@ -62,36 +62,45 @@
      </nav>
      <!-- Navigation End -->
 
-     <!-- Theme Mode Start -->
+     <!-- Theme Mode/Loading Scereen Start -->
+     <div class="loading-overlay" id="loadingOverlay">
+          <div class="loading-spinner"></div>
+     </div>
      <div class="btn-mode position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
           <button class="btn d-flex align-items-center border-0" type="button" id="darkModeToggle">
                <i id="darkModeIcon" class="bi bi-cloud-sun-fill text-white"></i>
           </button>
      </div>
-     <!-- Theme Mode End -->
+     <!-- Theme Mode/Loading Scereen End -->
 
      <!-- Home Start -->
-     <section class="section" id="Home" style="background-color: var(--bs-body-bg);">
+     <header class="home" id="Home">
           <div class="container">
                <div class="row justify-content-center">
-                    <div class="col-xxl-4 col-lg-5">
-                         <img src="/img/content.svg" alt="content-image" class="img-fluid align-self-center">
+                    <div class="col-xxl-5 col-lg-5">
+                         <img src="/img/mac.png" alt="content-image"
+                              class="img-fluid align-self-center pt-lg-3 pt-xxl-0 pt-xl-0">
                     </div>
-                    <div class="col-xxl-8 col-lg-7 align-self-center">
-                         <span class="section-brand fs-2">
-                              > AizenChizuru
+                    <div class="box col-xxl-7 col-lg-7 pt-4 pt-lg-0 align-self-center">
+                         <span class="home-brand fs-1">
+                              AizenChizuru
                          </span>
-                         <p class="text-description text-start">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus officia architecto
-                              aliquam dolore facere quidem eius similique quas atque rerum corrupti amet neque commodi
-                              nostrum beatae, quasi recusandae aperiam fuga cum? Rem maiores enim sapiente facilis
-                              debitis dolor vero, consectetur dolorem modi aut incidunt temporibus in rerum accusamus
-                              necessitatibus fugiat nihil repellat! Iusto, nisi sequi.
+                         <p class="text-description">
+                              Halo, saya AizenChizuru, seorang pengembang web fokus pada menciptakan situs web menarik
+                              dan fungsional. Saya memiliki pengalaman luas dalam pengembangan front-end dan back-end,
+                              serta keahlian mendalam dalam HTML, CSS, JavaScript, ReactJS, Python, dan PHP. Selain itu,
+                              saya juga terampil dalam mengelola basis data dan menggunakan berbagai bahasa pemrograman.
+                              Saya sangat percaya pada pentingnya komunikasi yang baik dan kerja tim yang solid dalam
+                              setiap proyek pengembangan situs web.
                          </p>
+                         <div class="d-grid gap-2 d-sm-flex justify-content-sm-start justify-content-xl-start">
+                              <a class="button-start fw-bolder" href="#">Get Started</a>
+                              <a class="button-start fw-bolder" href="#">Learn More</a>
+                         </div>
                     </div>
                </div>
           </div>
-     </section>
+     </header>
      <!-- Home End -->
 
      <!-- Script Js -->
@@ -102,6 +111,10 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
           integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
           crossorigin="anonymous"></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+          AOS.init();
+     </script>
 </body>
 
 </html>

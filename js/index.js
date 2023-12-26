@@ -59,3 +59,13 @@
      updateDarkModeStatus();
      updateIcon();
 })();
+
+// Loading Animation 
+setTimeout(() => {
+     const loadingOverlay = document.getElementById('loadingOverlay');
+     if (loadingOverlay) {
+          loadingOverlay.remove(); 
+          document.body.classList.remove('loading-overlay-active');
+     }
+}, 955);
+document.body.classList.add('loading-overlay-active');
