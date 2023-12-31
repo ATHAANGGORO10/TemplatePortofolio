@@ -21,7 +21,7 @@
 }
 
 .body-section {
-     height: 250vh;
+     height: 350vh;
      font-size: calc(14px,
                1.0774rem + 3, 7936vw,
                5.625rem);
@@ -106,7 +106,7 @@
 
 /* Home Start */
 .home {
-     padding-top: 2rem;
+     padding-top: 5rem;
      padding-bottom: 3rem;
 }
 
@@ -214,8 +214,8 @@
 
 /* About Start */
 .about {
-     /* padding-top: 5rem;
-     padding-bottom: 5rem; */
+     padding-top: 5rem;
+     padding-bottom: 5rem;
 }
 
 .about .container .about-description .about-title {
@@ -229,6 +229,27 @@
 }
 
 /* About End */
+
+/* Profle Start */
+.profile {
+     padding-top: 7rem;
+     padding-bottom: 3rem;
+}
+
+.profile .container .profile-card .card-body .button-profile {
+     padding: 7px 25px;
+     border-radius: 2px;
+     text-decoration: none;
+     font-family: var(--Font-default-1);
+     color: var(--Color-default-1);
+     background-color: var(--Color-default-3);
+}
+
+.profile .container .profile-card .card-body .button-profile:hover {
+     background-color: var(--Color-default-2);
+}
+
+/* Profle End */
 
 /* Theme Mode/Loading Screen Start */
 .btn-mode {

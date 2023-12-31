@@ -45,6 +45,7 @@
           updateIcon();
           updateHomeBackground(newTheme);
           updateAboutBackground(newTheme);
+          updateWorksBackground(newTheme);
      };
      const updateHomeBackground = theme => {
           const homeSection = document.querySelector('.home');
@@ -56,6 +57,12 @@
           const profileSection = document.querySelector('.about');
           if (profileSection) {
                profileSection.style.backgroundColor = theme === 'dark' ? '#343a40' : 'beige';
+          }
+     };
+     const updateWorksBackground = theme => {
+          const worksSection = document.querySelector('.works');
+          if (worksSection) {
+               worksSection.style.backgroundColor =theme === 'dark' ? '#343a40' : 'beige';
           }
      };
      const darkModeToggle = document.getElementById('darkModeToggle');
@@ -70,12 +77,14 @@
                updateIcon();
                updateHomeBackground(getPreferredTheme());
                updateAboutBackground(getPreferredTheme());
+               updateWorksBackground(getPreferredTheme());
           }
      });
      updateDarkModeStatus();
      updateIcon();
      updateHomeBackground(getStoredTheme() || getPreferredTheme());
      updateAboutBackground(getStoredTheme() || getPreferredTheme());
+     updateWorksBackground(getStoredTheme() || getPreferredTheme());
      setTimeout(() => { // Screen Loading Start
           const loadingOverlay = document.getElementById('loadingOverlay');
           if (loadingOverlay) {
