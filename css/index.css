@@ -1,11 +1,38 @@
-body {
+/* Body Start */
+:root {
+     /* Colors-Default */
+     --Color-default-13: #1335f5;
+     --Color-default-12: #f5cf13;
+     --Color-default-11: #15bfbc;
+     --Color-default-10: #d90769;
+     --Color-default-9: #15a04a;
+     --Color-default-8: #f57813;
+     --Color-default-7: #8100fa;
+     --Color-default-6: #212529;
+     --Color-default-5: #f3f3f3;
+     --Color-default-4: #3498db;
+     --Color-default-3: #8a2be2;
+     --Color-default-2: #6501c3;
+     --Color-default-1: #ffffff;
+     /* Font-Family Default */
+     --Font-default-3: sans-serif;
+     --Font-default-2: poppins;
+     --Font-default-1: Silkscreen;
+}
+
+.body-section {
      height: 250vh;
+     font-size: calc(14px,
+               1.0774rem + 3, 7936vw,
+               5.625rem);
      transition: overflow 0.5s ease;
 }
 
-body.loading-overlay-active {
+.body-section.loading-overlay-active {
      overflow: hidden;
 }
+
+/* Body End */
 
 /* Navbar Start */
 .navbar {
@@ -14,20 +41,20 @@ body.loading-overlay-active {
 
 .navbar .container .navbar-brand {
      font-weight: bolder;
-     font-family: Silkscreen;
+     font-family: var(--Font-default-1);
 }
 
 .navbar .container .button .navbar-toggler {
-     color: white;
      transition: 0.4s;
      padding: 7px 7px;
-     background-color: blueviolet;
+     color: var(--Color-default-1);
+     background-color: var(--Color-default-3);
 }
 
 .navbar .container .button .navbar-toggler:hover {
-     color: white;
      padding: 7px 7px;
-     background-color: #6501c3;
+     color: var(--Color-default-1);
+     background-color: var(--Color-default-2);
 }
 
 .navbar .container .offcanvas-body .navbar-nav .nav-item .nav-link {
@@ -38,72 +65,81 @@ body.loading-overlay-active {
 .navbar .container .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
      margin: 0 10px;
      transition: 0.5s;
-     color: blueviolet;
      font-weight: bolder;
+     color: var(--Color-default-3);
 }
 
 /* Media Query Headphone */
 @media (max-width: 575px) {
      .navbar .container .offcanvas-body .navbar-nav .nav-item .nav-link {
-          color: white;
           margin: 0 5px;
           font-weight: 500;
           padding-top: 10px;
+          color: var(--Color-default-1);
      }
 }
 
 /* Media Query Tablet And Headphone */
 @media (max-width: 375px),
 (max-width: 425px),
+(max-width: 863px),
 (max-width: 990px) {
      .navbar .container .offcanvas {
-          width: 40vh;
-          background-color: #212529;
+          width: 35vh;
+          background-color: var(--Color-default-6);
+     }
+
+     .navbar .container .offcanvas .navbar-nav .nav-item .nav-link {
+          color: var(--Color-default-1);
      }
 
      .navbar .container .offcanvas .navbar-nav .nav-item .nav-link:hover {
-          color: blueviolet;
           font-weight: bold;
           padding-left: 20px;
-          border-left: 3px solid white;
+          color: var(--Color-default-7);
+          border-left: 3px solid var(--Color-default-1);
      }
 }
 
 /* Navbar End */
 
+
 /* Home Start */
 .home {
-     padding-top: 6rem;
+     padding-top: 2rem;
      padding-bottom: 3rem;
 }
 
 .home-brand {
-     color: #6501c3;
      font-weight: bolder;
-     font-family: Silkscreen;
+     color: var(--Color-default-7);
+     font-family: var(--Font-default-1);
 }
 
-.text-description {
-     font-size: 15px;
+.home-description {
+     font-size: 14px;
      text-align: justify;
-     font-family: poppins;
+     font-family: var(--Font-default-2);
 }
 
-.button-start {
-     color: white;
+.home-button {
      text-align: center;
-     padding: 10px 20px;
+     padding: 8px 20px;
      border-radius: 5px;
      text-decoration: none;
-     background-color: blueviolet;
+     color: var(--Color-default-1);
+     background-color: var(--Color-default-2);
 }
 
-.button-start:hover {
-     color: white;
-     background-color: #6501c3;
+.home-button:hover {
+     color: var(--Color-default-1);
+     background-color: var(--Color-default-3);
 }
 
-/* Animated Image */
+.home-content {
+     animation: bounce 3s infinite;
+}
+
 @keyframes bounce {
      0% {
           transform: translateY(0);
@@ -118,21 +154,91 @@ body.loading-overlay-active {
      }
 }
 
-.img-fluid {
-     animation: bounce 3s infinite;
+/* Home End */
+
+/* Box-List Start */
+.box-list {
+     padding-top: 4rem;
+     padding-bottom: 3rem;
 }
 
-/* Home End */
+.box-list .container .box-icons {
+     font-size: 32px;
+     line-height: 0px;
+     margin-right: 20px;
+}
+
+.icons-one {
+     color: var(--Color-default-8);
+}
+
+.icons-two {
+     color: var(--Color-default-9);
+}
+
+.icons-tree {
+     color: var(--Color-default-10);
+}
+
+.icons-for {
+     color: var(--Color-default-11)
+}
+
+.icons-five {
+     color: var(--Color-default-12);
+}
+
+.icons-six {
+     color: var(--Color-default-13);
+}
+
+.box-list .container .text-item .title {
+     font-size: 20px;
+     font-weight: 700;
+     color: var(--Color-default-7);
+     font-family: var(--Font-default-1);
+}
+
+.box-list .text-item .title {
+     text-decoration: none;
+     color: var(--Color-default-3);
+}
+
+.box-list .container .text-item .description {
+     font-size: 14px;
+     line-height: 24px;
+     font-family: var(--Font-default-2);
+}
+
+/* Box-List End */
+
+/* About Start */
+.about {
+     /* padding-top: 5rem;
+     padding-bottom: 5rem; */
+}
+
+.about .container .about-description .about-title {
+     color: var(--Color-default-3);
+}
+
+.about .container .about-description .about-information {
+     font-size: 15px;
+     text-align: justify;
+     font-family: var(--Font-default-2);
+}
+
+/* About End */
 
 /* Theme Mode/Loading Screen Start */
 .btn-mode {
      padding: 7px 5px;
      border-radius: 10%;
-     background-color: #6501c3;
+     background-color: var(--Color-default-3);
 }
 
 .btn-mode:hover {
-     background-color: blueviolet;
+     background-color: var(--Color-default-2);
 }
 
 .loading-overlay {
@@ -145,16 +251,16 @@ body.loading-overlay-active {
      position: fixed;
      align-items: center;
      justify-content: center;
-     background-color: #212529;
+     background-color: var(--Color-default-6);
 }
 
 .loading-spinner {
      width: 50px;
      height: 50px;
      border-radius: 50%;
-     border: 4px solid #f3f3f3;
-     border-top: 4px solid #3498db;
      animation: spin 2s linear infinite;
+     border: 4px solid var(--Color-default-5);
+     border-top: 4px solid var(--Color-default-7);
 }
 
 .loading-overlay {

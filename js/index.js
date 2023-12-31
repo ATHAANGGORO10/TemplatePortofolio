@@ -1,5 +1,5 @@
 (() => {
-     'use strict';
+     'use strict'; // Button Mode Dark - Light Start
      const getStoredTheme = () => localStorage.getItem('theme');
      const setStoredTheme = theme => localStorage.setItem('theme', theme);
      const getPreferredTheme = () => {
@@ -23,8 +23,8 @@
                const currentTheme = getStoredTheme() || getPreferredTheme();
                darkModeStatus.textContent = ` (${currentTheme === 'dark' ? 'Dark' : 'Light'} Mode)`;
           }
-     };
-     const updateIcon = () => {
+     }; // Button Mode Dark - Light End
+     const updateIcon = () => { // Button Icons Click Start
           const currentTheme = getStoredTheme() || getPreferredTheme();
           const icon = document.getElementById('darkModeIcon');
           if (icon) {
@@ -43,6 +43,20 @@
           setTheme(newTheme);
           updateDarkModeStatus();
           updateIcon();
+          updateHomeBackground(newTheme);
+          updateAboutBackground(newTheme);
+     };
+     const updateHomeBackground = theme => {
+          const homeSection = document.querySelector('.home');
+          if (homeSection) {
+               homeSection.style.backgroundColor = theme === 'dark' ? '#343a40' : 'beige';
+          }
+     };
+     const updateAboutBackground = theme => {
+          const profileSection = document.querySelector('.about');
+          if (profileSection) {
+               profileSection.style.backgroundColor = theme === 'dark' ? '#343a40' : 'beige';
+          }
      };
      const darkModeToggle = document.getElementById('darkModeToggle');
      if (darkModeToggle) {
@@ -54,18 +68,20 @@
                setTheme(getPreferredTheme());
                updateDarkModeStatus();
                updateIcon();
+               updateHomeBackground(getPreferredTheme());
+               updateAboutBackground(getPreferredTheme());
           }
      });
      updateDarkModeStatus();
      updateIcon();
+     updateHomeBackground(getStoredTheme() || getPreferredTheme());
+     updateAboutBackground(getStoredTheme() || getPreferredTheme());
+     setTimeout(() => { // Screen Loading Start
+          const loadingOverlay = document.getElementById('loadingOverlay');
+          if (loadingOverlay) {
+               loadingOverlay.remove();
+               document.body.classList.remove('loading-overlay-active');
+          }
+     }, 955);
+     document.body.classList.add('loading-overlay-active');
 })();
-
-// Loading Animation 
-setTimeout(() => {
-     const loadingOverlay = document.getElementById('loadingOverlay');
-     if (loadingOverlay) {
-          loadingOverlay.remove(); 
-          document.body.classList.remove('loading-overlay-active');
-     }
-}, 955);
-document.body.classList.add('loading-overlay-active');

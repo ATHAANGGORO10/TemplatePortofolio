@@ -1,0 +1,39 @@
+Program :
+- HTML | Hyper Text Markup Laguage
+- CSS | Cashding Style Sheet
+- JS | JavaScript
+- Boostrap | UI
+
+Tools :
+- VScode Editor
+- Live Browser  
+- Chat GPT-4
+- Browser Crome
+
+Extensions :
+- Auto Rename Tag | Rename Tag Program
+- Error Lens | Program Error 
+- Live server/Live Preview | Run Project 
+- Prettier - Code Formate | Formate And Code 
+- Project Manager | Library 
+
+Link CDN :
+- Google Font 
+- Google Icons
+- Animated Aos 
+- Boostrap Icons
+- waves SVG
+- Animated CSS
+
+Theme Website :
+- Pixel Art Modern
+- Portofolio 
+
+Media :
+- Formate Image | SVG | JPG | PNG
+
+Link MediaSosial :
+-https://Boostrap.com
+-https://Github.com
+-https://Instagram.com
+-https://AizenChizuru.Proejct.com 
