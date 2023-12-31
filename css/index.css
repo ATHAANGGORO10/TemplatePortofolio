@@ -21,10 +21,8 @@
 }
 
 .body-section {
-     height: 350vh;
-     font-size: calc(14px,
-               1.0774rem + 3, 7936vw,
-               5.625rem);
+     height: 500vh;
+     padding: 0 0 0 0;
      transition: overflow 0.5s ease;
 }
 
@@ -35,8 +33,24 @@
 /* Body End */
 
 /* Navbar Start */
-.navbar {
+#navbar {
      background-color: var(--bs-body-bg);
+}
+
+#navbar {
+     transition: transform 0.3s ease-in-out;
+     /* Transition for transform */
+}
+
+#navbar.hidden {
+     transform: translateY(-100%);
+     /* Slide up to hide */
+}
+
+
+.navbar .container .offcanvas {
+     height: 100vh;
+     background-color: var(--Color-default-6);
 }
 
 .navbar .container .navbar-brand {
@@ -112,7 +126,7 @@
 
 .home-brand {
      font-weight: bolder;
-     color: var(--Color-default-7);
+     color: var(--Color-default-3);
      font-family: var(--Font-default-1);
 }
 
@@ -123,8 +137,8 @@
 }
 
 .home-button {
-     text-align: center;
      padding: 8px 20px;
+     text-align: center;
      border-radius: 5px;
      text-decoration: none;
      color: var(--Color-default-1);
@@ -140,6 +154,7 @@
      animation: bounce 3s infinite;
 }
 
+/* Key Freme Animation-Image Bounce */
 @keyframes bounce {
      0% {
           transform: translateY(0);
@@ -210,46 +225,91 @@
      font-family: var(--Font-default-2);
 }
 
+/* Media query Headphone */
+@media (max-width: 575px) {
+     .box-list {
+          padding-top: 3rem;
+          padding-bottom: 2rem;
+     }
+}
+
+/* Media Query Tablet And Headphone */
+@media (max-width: 375px),
+(max-width: 425px),
+(max-width: 863px),
+(max-width: 990px) {
+     .box-list {
+          padding-top: 3rem;
+          padding-bottom: 2rem;
+     }
+}
+
 /* Box-List End */
 
 /* About Start */
 .about {
-     padding-top: 5rem;
-     padding-bottom: 5rem;
+     padding-top: 3rem;
+     padding-bottom: 3rem;
 }
 
-.about .container .about-description .about-title {
-     color: var(--Color-default-3);
+.about .container .about-content .about-title {
+     color: var(--Color-default-7);
+     font-family: var(--Font-default-1);
 }
 
-.about .container .about-description .about-information {
-     font-size: 15px;
+.about .container .about-content .about-description {
+     font-size: 14px;
      text-align: justify;
      font-family: var(--Font-default-2);
 }
 
+/* Media query Headphone */
+@media (max-width: 575px) {
+     .about {
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+     }
+}
+
+/* Media Query Tablet And Headphone */
+@media (max-width: 375px),
+(max-width: 425px),
+(max-width: 863px),
+(max-width: 990px) {
+     .about {
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+     }
+}
+
 /* About End */
 
-/* Profle Start */
+/* Profile Start */
 .profile {
-     padding-top: 7rem;
-     padding-bottom: 3rem;
+     padding-top: 4rem;
+     padding-bottom: 4rem;
 }
 
-.profile .container .profile-card .card-body .button-profile {
-     padding: 7px 25px;
-     border-radius: 2px;
-     text-decoration: none;
-     font-family: var(--Font-default-1);
-     color: var(--Color-default-1);
-     background-color: var(--Color-default-3);
+/* Media query Headphone */
+@media (max-width: 575px) {
+     .profile {
+          padding-top: 4rem;
+          padding-bottom: 3rem;
+     }
 }
 
-.profile .container .profile-card .card-body .button-profile:hover {
-     background-color: var(--Color-default-2);
+/* Media Query Tablet And Headphone */
+@media (max-width: 375px),
+(max-width: 425px),
+(max-width: 863px),
+(max-width: 990px) {
+     .profile {
+          padding-top: 4rem;
+          padding-bottom: 3rem;
+     }
 }
 
-/* Profle End */
+/* Profile End */
 
 /* Theme Mode/Loading Screen Start */
 .btn-mode {
@@ -288,6 +348,7 @@
      animation: fadeOut 0.5s ease 0.5s forwards;
 }
 
+/* Key Freme Animation-Image Spinner-Loading */
 @keyframes spin {
      0% {
           transform: rotate(0deg);
@@ -298,6 +359,7 @@
      }
 }
 
+/* Effect Transition-Blur Spinner-Loading */
 @keyframes fadeOut {
      0% {
           opacity: 1;

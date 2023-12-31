@@ -94,3 +94,14 @@
      }, 955);
      document.body.classList.add('loading-overlay-active');
 })();
+let lastScrollTop = 0;
+window.addEventListener("scroll", function() {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  if (currentScroll > lastScrollTop) {
+    document.getElementById("navbar").classList.add("hidden");
+  } else {
+    document.getElementById("navbar").classList.remove("hidden");
+  }
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
+});
+
