@@ -62,7 +62,7 @@
      const updateWorksBackground = theme => {
           const worksSection = document.querySelector('.works');
           if (worksSection) {
-               worksSection.style.backgroundColor =theme === 'dark' ? '#343a40' : 'beige';
+               worksSection.style.backgroundColor = theme === 'dark' ? '#343a40' : 'beige';
           }
      };
      const darkModeToggle = document.getElementById('darkModeToggle');
@@ -95,13 +95,13 @@
      document.body.classList.add('loading-overlay-active');
 })();
 let lastScrollTop = 0;
-window.addEventListener("scroll", function() {
-  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-  if (currentScroll > lastScrollTop) {
-    document.getElementById("navbar").classList.add("hidden");
-  } else {
-    document.getElementById("navbar").classList.remove("hidden");
-  }
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
+window.addEventListener("scroll", function () {
+     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+     if (currentScroll > lastScrollTop) {
+          document.getElementById("navbar").classList.add("hidden");
+     } else {
+          document.getElementById("navbar").classList.remove("hidden");
+     }
+     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
 
