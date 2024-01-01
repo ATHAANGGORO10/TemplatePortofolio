@@ -304,6 +304,79 @@
 
 /* About End */
 
+/* Service Start */
+.service {
+     background-size: cover;
+     padding: 80px 0 60px 0;
+}
+
+.service .container .box {
+     height: 200px;
+     padding: 50px 20px;
+     position: relative;
+     text-align: center;
+     margin-bottom: 50px;
+     background-color: var(--Color-default-1);
+}
+
+.service .icon {
+     position: absolute;
+     top: -36px;
+     left: calc(50% - 36px);
+     transition: 0.2s;
+     border-radius: 50%;
+     border: 6px solid #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     text-align: center;
+     width: 72px;
+     height: 72px;
+     background: var(--Color-default-7);
+}
+
+.service .icon a {
+     display: inline-block;
+}
+
+.service .icon i {
+     color: #fff;
+     line-height: 0;
+     font-size: 24px;
+}
+
+.service .box:hover .icon {
+     background: var(--Color-default-1);
+     border: 3px solid var(--Color-default-9);
+}
+
+.service .box:hover .icon i {
+     color: #2dc997;
+}
+
+.service .box:hover .icon a {
+     color: #2dc997;
+}
+
+.service .title {
+     font-size: 18px;
+     font-weight: 700;
+     margin-bottom: 15px;
+     text-transform: uppercase;
+}
+
+.service .title a {
+     color: #111;
+}
+
+.service .description {
+     font-size: 14px;
+     line-height: 24px;
+}
+
+/* Service End */
+
 /* Theme Mode/Loading Screen Start */
 .btn-mode {
      padding: 7px 5px;
