@@ -310,7 +310,7 @@
      padding: 80px 0 60px 0;
 }
 
-.service .container .box {
+.service .container .service-box {
      height: 200px;
      padding: 50px 20px;
      position: relative;
@@ -319,7 +319,7 @@
      background-color: var(--Color-default-1);
 }
 
-.service .icon {
+.service .container .service-icon {
      position: absolute;
      top: -36px;
      left: calc(50% - 36px);
@@ -336,41 +336,41 @@
      background: var(--Color-default-7);
 }
 
-.service .icon a {
+.service .container .service-icon a {
      display: inline-block;
 }
 
-.service .icon i {
+.service .container .service-icon i {
      color: #fff;
      line-height: 0;
      font-size: 24px;
 }
 
-.service .box:hover .icon {
+.service .container .service-box:hover .service-icon {
      background: var(--Color-default-1);
      border: 3px solid var(--Color-default-9);
 }
 
-.service .box:hover .icon i {
+.service .container .box:hover .service-icon i {
      color: #2dc997;
 }
 
-.service .box:hover .icon a {
+.service .container .box:hover .service-icon a {
      color: #2dc997;
 }
 
-.service .title {
+.service .container .service-title {
      font-size: 18px;
      font-weight: 700;
      margin-bottom: 15px;
      text-transform: uppercase;
 }
 
-.service .title a {
+.service .container .service-title a {
      color: #111;
 }
 
-.service .description {
+.service .container .service-description {
      font-size: 14px;
      line-height: 24px;
 }
