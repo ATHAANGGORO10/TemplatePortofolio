@@ -306,8 +306,7 @@
 
 /* Service Start */
 .service {
-     background-size: cover;
-     padding: 80px 0 60px 0;
+     padding-top: 7rem;
 }
 
 .service .container .service-box {
@@ -341,7 +340,6 @@
 }
 
 .service .container .service-icon i {
-     color: #fff;
      line-height: 0;
      font-size: 24px;
 }
@@ -366,19 +364,27 @@
      text-transform: uppercase;
 }
 
-.service .container .service-title a {
-     color: #111;
-}
-
 .service .container .service-description {
      font-size: 14px;
      line-height: 24px;
+}
+
+/* Media Query Tablet And Headphone */
+@media (max-width: 375px),
+(max-width: 425px),
+(max-width: 863px),
+(max-width: 990px),
+(max-width: 1024px) {
+     .service {
+          padding-top: 5rem;
+     }
 }
 
 /* Service End */
 
 /* Theme Mode/Loading Screen Start */
 .btn-mode {
+     z-index: 99999;
      padding: 7px 5px;
      border-radius: 10%;
      background-color: var(--Color-default-3);
