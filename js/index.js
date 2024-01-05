@@ -97,10 +97,11 @@
 let lastScrollTop = 0;
 window.addEventListener("scroll", function () {
      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+     let navbar = document.getElementById("navbar");
      if (currentScroll > lastScrollTop) {
-          document.getElementById("navbar").classList.add("hidden");
+          navbar.style.transform = "translateY(-100%)";
      } else {
-          document.getElementById("navbar").classList.remove("hidden");
+          navbar.style.transform = "translateY(0)";
      }
      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });

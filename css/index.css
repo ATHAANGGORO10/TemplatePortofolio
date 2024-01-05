@@ -33,18 +33,10 @@
 /* Body End */
 
 /* Navbar Start */
-#navbar {
+.navbar {
      background-color: var(--bs-body-bg);
-}
-
-#navbar {
      transition: transform 0.3s ease-in-out;
 }
-
-#navbar.hidden {
-     transform: translateY(-100%);
-}
-
 
 .navbar .container .offcanvas {
      height: 100vh;
@@ -261,6 +253,10 @@
      list-style: none;
 }
 
+.about .container .list .icons-text {
+     color: var(--Color-default-3);
+}
+
 .about .container .check {
      color: var(--Color-default-3);
 }
@@ -306,67 +302,14 @@
 
 /* Service Start */
 .service {
-     padding-top: 7rem;
+     padding-top: 3rem;
 }
 
-.service .container .service-box {
-     height: 200px;
-     padding: 50px 20px;
-     position: relative;
-     text-align: center;
-     margin-bottom: 50px;
-     background-color: var(--Color-default-1);
-}
-
-.service .container .service-icon {
-     position: absolute;
-     top: -36px;
-     left: calc(50% - 36px);
-     transition: 0.2s;
-     border-radius: 50%;
-     border: 6px solid #fff;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
-     text-align: center;
-     width: 72px;
-     height: 72px;
-     background: var(--Color-default-7);
-}
-
-.service .container .service-icon a {
-     display: inline-block;
-}
-
-.service .container .service-icon i {
-     line-height: 0;
-     font-size: 24px;
-}
-
-.service .container .service-box:hover .service-icon {
-     background: var(--Color-default-1);
-     border: 3px solid var(--Color-default-9);
-}
-
-.service .container .box:hover .service-icon i {
-     color: #2dc997;
-}
-
-.service .container .box:hover .service-icon a {
-     color: #2dc997;
-}
-
-.service .container .service-title {
-     font-size: 18px;
-     font-weight: 700;
-     margin-bottom: 15px;
-     text-transform: uppercase;
-}
-
-.service .container .service-description {
-     font-size: 14px;
-     line-height: 24px;
+/* Media query Headphone */
+@media (max-width: 575px) {
+     .service {
+          padding-top: 2rem;
+     }
 }
 
 /* Media Query Tablet And Headphone */
@@ -376,7 +319,7 @@
 (max-width: 990px),
 (max-width: 1024px) {
      .service {
-          padding-top: 5rem;
+          padding-top: 2rem;
      }
 }
 
@@ -384,7 +327,7 @@
 
 /* Theme Mode/Loading Screen Start */
 .btn-mode {
-     z-index: 99999;
+     z-index: 9999;
      padding: 7px 5px;
      border-radius: 10%;
      background-color: var(--Color-default-3);
