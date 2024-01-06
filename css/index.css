@@ -305,6 +305,12 @@
      padding-top: 3rem;
 }
 
+.service .container .service-brand {
+     font-weight: bolder;
+     color: var(--Color-default-3);
+     font-family: var(--Font-default-1);
+}
+
 /* Media query Headphone */
 @media (max-width: 575px) {
      .service {
